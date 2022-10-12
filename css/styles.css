@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
   --accent-color: #2196f3;
   --primary-bgr-color: #ffffff;
   --primary-button-bgr-color: #f5f4fa;
@@ -170,7 +171,7 @@ body {
 /* footer */
 
 .address-links .address-place {
-  color: var(--primary-bgr-color);
+  color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
