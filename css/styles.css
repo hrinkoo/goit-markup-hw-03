@@ -77,7 +77,20 @@ p {
 
 /* SITE NAV */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav > .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -94,7 +107,25 @@ p {
   color: var(--accent-color);
 }
 
-.contact {
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* links-contact */
+
+.links-contact {
+  display: flex;
+  margin-left: 344px;
+}
+
+.links-contact > .item + .item {
+  margin-left: 50px;
+}
+
+.links-contact .contact {
   color: var(--primary-text-color);
 
   font-weight: 500;
