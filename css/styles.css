@@ -16,10 +16,25 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Видаляє маржин у заголовків, Видаляє маржин у абзаців */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* видаляє крапки */
 
 .list-hidden {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* видаляє підкреслення під силками */
@@ -103,6 +118,8 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .title-button {
@@ -112,14 +129,23 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
+  min-width: 216px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.title-button:hover {
+  color: var(--accent-color);
+  background-color: var(--primary-bgr-color);
+  border-color: var(--accent-color);
 }
 
 .hero-section {
   background-color: #2f303a;
+  text-align: center;
 }
 
 /* Team фон сеції/Фон контейнера для членів команди*/
@@ -138,17 +164,26 @@ body {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /* Подзаголовки 2 и 4 секції */
+
+.caption {
+  margin-bottom: 10px;
+}
 
 .list-hidden .caption {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
-
   text-transform: uppercase;
 }
+
+/* .list-hidden .caption:last-child {
+  margin-right: 30;
+} */
 
 .list-hidden .caption-text {
   line-height: 1.71;
@@ -193,6 +228,8 @@ body {
 
 .footer-section {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* Button для порфолио*/
@@ -229,4 +266,24 @@ body {
 .list-text {
   color: var(--primary-text-color);
   line-height: 1.88;
+}
+
+/* 3 module  */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* background-color: teal; */
+}
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
