@@ -166,6 +166,7 @@ p {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .title-button:hover {
@@ -177,6 +178,47 @@ p {
 .hero-section {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* features box */
+
+.list-box .caption-text {
+  font-size: 14px;
+}
+
+.list-box {
+  display: flex;
+  /* background-color: teal; */
+}
+
+.list-box > .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  /* outline: 2px solid tomato; */
+}
+
+.list-box > .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* Чим ми займаємось */
+
+.list-images {
+  display: flex;
+}
+
+.list-images > .item-images {
+  margin-right: 30px;
+}
+
+.list-images > .item-images:nth-child(3n) {
+  margin-right: 0;
+}
+
+.images {
+  display: block;
 }
 
 /* Team фон сеції/Фон контейнера для членів команди*/
@@ -186,7 +228,32 @@ p {
 }
 
 .worker-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.worker-list > .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+
   background-color: var(--primary-bgr-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker-list > .item:last-child {
+  margin-right: 0;
+}
+
+.worker-avatar {
+  margin-bottom: 30px;
+}
+
+.worker-list .caption-text {
+  margin-bottom: 30px;
 }
 
 /* Section-заголовки: "Наші особливості, Чим ми займаємось, Наша команда*/
@@ -277,12 +344,21 @@ p {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+}
+
+.btn-main {
+  padding: 6px 25px;
 }
 
 .button:hover,
 .button:focus {
   color: var(--primary-bgr-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cursor {
@@ -291,8 +367,47 @@ p {
 
 /* section portfolio */
 
+.list-benefits {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.benefits-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.benefits-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.benefits-link {
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start; */
+  padding: 20px 24px;
+
+  outline: 2px solid tomato;
+}
+
 .small-margin {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+
+.small-margin > .button-item {
+  margin-right: 8px;
 }
 
 .filter .caption {
@@ -314,7 +429,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section {
