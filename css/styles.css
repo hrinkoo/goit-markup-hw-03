@@ -334,6 +334,15 @@ p {
   padding-bottom: 60px;
 }
 
+.footer-section .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address-links > .address-items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* Button для порфолио*/
 
 .button {
@@ -396,8 +405,6 @@ p {
   flex-direction: column;
   align-items: flex-start; */
   padding: 20px 24px;
-
-  outline: 2px solid tomato;
 }
 
 .small-margin {
