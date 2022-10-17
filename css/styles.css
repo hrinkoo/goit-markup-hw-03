@@ -124,7 +124,7 @@ p {
 
 .links-contact {
   display: flex;
-  margin-left: 344px;
+  margin-left: auto;
 }
 
 .links-contact > .item + .item {
@@ -148,6 +148,9 @@ p {
 /* Hero */
 
 .title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
@@ -176,8 +179,8 @@ p {
 }
 
 .title-button:hover {
-  color: var(--accent-color);
-  background-color: var(--primary-bgr-color);
+  color: var(--secondary-text-color);
+  background-color: #188ce8;
   border-color: var(--accent-color);
 }
 
@@ -235,7 +238,6 @@ p {
 
 .worker-list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .worker-list > .item {
@@ -254,12 +256,9 @@ p {
   margin-right: 0;
 }
 
-.worker-avatar {
-  margin-bottom: 30px;
-}
-
-.worker-list .caption-text {
-  margin-bottom: 30px;
+.worker-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Section-заголовки: "Наші особливості, Чим ми займаємось, Наша команда*/
@@ -395,6 +394,8 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .benefits-item:nth-child(3n) {
@@ -425,6 +426,10 @@ p {
 
 .small-margin > .button-item {
   margin-right: 8px;
+}
+
+.small-margin > .button-item:last-child {
+  margin-right: 0;
 }
 
 .filter .caption {
